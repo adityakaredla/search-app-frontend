@@ -13,7 +13,6 @@ import axios from "axios";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import TablePagination from "@mui/material/TablePagination";
-import sortSVG from 'public/sort.jpg';
 import "./table.css";
 export default function DenseTable() {
   const [data, setData] = useState([]);
@@ -171,7 +170,7 @@ export default function DenseTable() {
                 align="middle"
                 style={{ border: "1px solid #000000", minWidth: "3rem" }}
               >
-                id <img src='/sort.png' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                id <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField
                   size="small"
                   onChange={(e) => handleClientSearch(e, "id")}
@@ -182,7 +181,7 @@ export default function DenseTable() {
                 align="middle"
                 style={{ border: "1px solid #000000", width: "15rem"}}
               >
-                Name <img src={sortSVG} onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                Name <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField
                   onChange={(e) => handleClientSearch(e, "name")}
                   size="small"
@@ -191,7 +190,7 @@ export default function DenseTable() {
                 />
               </TableCell>
               <TableCell align="middle" style={{ border: "1px solid #000000" }}>
-                Age <img src={sortSVG} onClick={()=>{
+                Age <img src='./sort.jpg' onClick={()=>{
                   let tempData = data;
                   tempData.sort((a, b) => a.age - b.age);
                   setFilteredData(tempData)}}/>
@@ -205,50 +204,50 @@ export default function DenseTable() {
                 align="middle"
                 style={{ border: "1px solid #000000", width: "100rem" }}
               >
-                Street and City <img src={sortSVG} onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                Street and City <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField size="small" InputProps={{ sx: { height: "2rem" ,width: '5rem'} }} onChange={(e) => handleClientSearch2(e, "address")}/>
               </TableCell>
               <TableCell
                 align="middle"
                 style={{ border: "1px solid #000000", width: "6rem" }}
               >
-                Country <img src={sortSVG} onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                Country <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField size="small" InputProps={{ sx: { height: "1.5rem",width: '5rem' } }} onChange={(e) => handleClientSearch2(e, "address")}/>
               </TableCell>
               <TableCell align="middle" style={{ border: "1px solid #000000" }}>
-                Coordinates <img src={sortSVG} onClick={()=>{
+                Coordinates <img src='./sort.jpg' onClick={()=>{
                   let tempData = data;
                   tempData.sort((a, b) => a.address.coordinates.latitude - b.address.coordinates.latitude);
                   setFilteredData(tempData)}}/>
                 <TextField size="small" InputProps={{ sx: { height: "1.5rem" } }} onChange={(e) => handleClientSearch2(e, "address")}/>
               </TableCell>
               <TableCell align="middle" style={{ border: "1px solid #000000" }}>
-                Email <img src={sortSVG} onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                Email <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField size="small" InputProps={{ sx: { height: "1.5rem" } }} onChange={(e) => handleClientSearch2(e, "contact")}/>
               </TableCell>
               <TableCell
                 align="middle"
                 style={{ border: "1px solid #000000", width: "10rem" }}
               >
-                Phone <img src={sortSVG} onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                Phone <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField size="small" InputProps={{ sx: { height: "1.5rem" , width: '5rem'} }} onChange={(e) => handleClientSearch2(e, "contact")}/>
               </TableCell>
               <TableCell align="middle" style={{ border: "1px solid #000000" }}>
-                Skills <img src={sortSVG} onClick={()=>{setFilteredData(filteredData)}}/>
+                Skills <img src='./sort.jpg' onClick={()=>{setFilteredData(filteredData)}}/>
                 <TextField size="small" InputProps={{ sx: { height: "1.5rem" ,width: '4rem' } }} onChange={(e) => handleClientSearch2(e, "skills")}/>
               </TableCell>
               <TableCell
                 align="middle"
                 style={{ border: "1px solid #000000", width: "10rem" }}
               >
-                Education <img src={sortSVG} onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                Education <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField size="small" InputProps={{ sx: { height: "1.5rem" ,width: '5rem'} }} onChange={(e) => handleClientSearch2(e, "education")}/>
               </TableCell>
               <TableCell
                 align="middle"
                 style={{ border: "1px solid #000000", width: "10rem" }}
               >
-                Projects <img src={sortSVG} onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
+                Projects <img src='./sort.jpg' onClick={()=>{setFilteredData([...filteredData].reverse())}}/>
                 <TextField size="small" InputProps={{ sx: { height: "1.5rem" ,width: '4rem' } }} onChange={(e) => handleClientSearch2(e, "projects")}/>
               </TableCell>
             </TableRow>
