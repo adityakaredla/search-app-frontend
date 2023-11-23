@@ -1,0 +1,36 @@
+
+
+.searchApp{
+    border: 1px solid #000000;
+    border-radius: .5rem;
+    background-color: #eeeeee;
+    padding: 1rem;
+    margin: 1.5rem;
+    margin-bottom: 3rem;
+}
+.tableContainer{
+    overflow-x: auto;
+    font-size: .1rem;
+}
+
+img{
+    height : .7rem;
+    width: .7rem;
+}
+.searchDiv{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 1rem;
+}
+.projects span{
+    font-weight: bold;
+}
+
+.projects{
+    font-size: .45rem;
+}
+
+footer{
+    margin: .5rem;
+}
